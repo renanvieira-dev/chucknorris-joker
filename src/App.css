@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html{
+  height: 100%;
+  background-color: #EDEDED;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.division-content{
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.division-content h2{
+  width: 100%;
+  max-width: 768px;
+  color: #165259;
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid #165259;
+}
+
+.division-2-column{
+  display: flex;
+}
+
+.flex{
+  display: flex;
+  padding: 2rem 0;
+  flex-direction: column;
+}
+
+.flex img{
+  width: 300px;
+  border-radius: 2rem;
+  margin: 0 auto;
+  margin-right: 30px;
+}
+
+.flex Button{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.joker{
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.joker h2{
+  border: 0;
+}
+
+.result-joker{
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  background-color: #165259;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 3px #33b47c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color:#47FFAE;
+  padding: 2rem;
+  text-align: center;
+}
+
+.result-joker p{
+  margin: 10px 0;
+}
+
+.container-2{
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#btn{
+  background: linear-gradient(to right, #165259, #33b47c) ;
+  color: #fff;
+  text-shadow: 2px 2px 2px #333;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  text-align: center;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .1s all ease-in-out;
+}
+
+#btn:hover{
+  transform: scale(calc(100% + 10%));
+}
+
+@media screen and (max-width: 800px){
+  .container{
+    padding: 0 2%;
+  }
+
+  .division-2-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .joker h2{
+    margin-top: -40px;
+  }
+}
